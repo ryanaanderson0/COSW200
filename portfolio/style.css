@@ -1,0 +1,160 @@
+.container{
+	width:1500px;
+	height: auto;
+}
+
+/*heading styles*/
+
+h1{
+	font-family: 'Unica One', cursive;
+	font-size: 4.5em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-left: 200px;
+}
+
+h2{
+	font-family: 'Unica One', cursive;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+
+/*link colors/decoration*/
+
+a , li{
+	text-decoration: none;
+	list-style-type:none;
+	color: #808782;
+}
+
+a:active{
+	color: #7ABFD6;
+}
+
+a:link{
+	color: #808782;
+}
+
+a:hover{
+	color: #7ABFD6;
+}
+
+.current_page{
+	color: #7ABFD6 ;
+}
+
+/*navigation orientation/styles */
+
+.nav_li{
+	float: right;
+	display: inline;
+	font-family: 'Unica One', cursive;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding-right: 50px;
+
+}
+/*clearing effects of float:right;*/
+
+.nav_items::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nav_items{
+	margin-right: 25%; 
+	margin-top: -100px;
+}
+
+/*main photo styles*/
+
+.main_photo{
+	float: left;
+	margin: 150px 0 0 200px;
+	}
+
+/*text box styles*/
+
+.about_me_text{
+	display:inline-block;
+	width: 35%;
+	margin: 115px 0 0 50px;
+}
+
+.concepts_text{
+	display:inline-block;
+	width: 35%;
+	margin: 5px 0 0 50px;
+}
+
+hr{
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 0.5em;
+  border-width: .5px;
+  border-color: #7ABFD6;
+}
+
+p{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+
+
+/*index styles*/
+
+.project_header{
+	margin: 100px 0 20px 160px;
+}
+
+.grid{
+	margin-left: 100px;
+}
+
+.portfolio_item{
+	margin:50px 40px -10px 60px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+}
+
+.column{
+	display: inline-block;
+	width: 33%;
+}
+
+.project_title{
+	width: 302px;
+	margin-left: 60px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align:center;
+
+}
+
+/*contact styles*/
+
+.contact_header{
+	margin: 100px 0 20px 160px
+}
+.contact_text{
+	width: 900px;
+	margin: 50px 0px 0px 160px;
+}
+
+/*footer styles*/
+.footer{
+	margin: 100px 0 0 25%;
+}
+.footer_li{
+	float: left;
+	padding: 50px;
+	font-family: 'Unica One', cursive;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
