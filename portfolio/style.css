@@ -1,7 +1,6 @@
-/* .container{
-	width:1500px;
-	height: auto;
-} */
+.container{
+	margin-top: 5%;
+}
 
 
 .nav_background_texture{    
@@ -23,9 +22,9 @@ h1{
 }
 
 h1.header_subtitle {
-    margin-top: 2%;
-    font-family: 'Courgette', cursive;
-    font-size: 2.5em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2em;
+    color: #f9f9f9;
 }
 
 h2{
@@ -38,10 +37,11 @@ h2{
 
 .header_container{
     background-color: 	#2F4F4F;
+    padding-bottom: 4%;
 }
 
 .header_title{
-    color: white;
+    color: #f9f9f9;
 }
 .header_logo{
      display: flex; 
@@ -91,9 +91,15 @@ a:hover{
 
 .nav-item{
 	font-family: 'Unica One', cursive;
-	font-size: 1.5em;
+	font-size: 1.7em;
 	text-transform: uppercase;
 	padding-right: 50px;
+}
+
+.nav_container {
+    max-height: auto;
+    background-color: 	#2F4F4F;
+    padding-bottom: 1%;
 }
 
 /*main photo styles*/
@@ -121,8 +127,6 @@ a:hover{
 
 .nav_line{
   display: block;
-  margin-top: 5%;
-  margin-bottom: 0.5em;
   border-width: .5px;
   border-color: #2a6969;
 }
@@ -186,14 +190,39 @@ p{
 }
 
 /*footer styles*/
-.footer{
-	margin: 100px 0 0 25%;
-}
-.footer_li{
-	float: left;
-	padding: 50px;
-	font-family: 'Unica One', cursive;
-	font-size: 1.5em;
-	text-transform: uppercase;
+.footer_container{
+    background-color: #808782;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
+/* footer social media button styles */
+
+.social-media-footer{
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+    max-width: 500px;
+    padding: 20px;
+
+}
+
+.social-media-footer a{
+    text-decoration: none;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    transition: 0.4s all;
+    line-height: 50px;
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    color: #2a6969;
+}
+
+.social-media-footer a:hover{
+    transform: scale(1.2);
+    color: #7ABFD6;
+}
