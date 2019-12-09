@@ -226,3 +226,19 @@ p{
     transform: scale(1.2);
     color: #7ABFD6;
 }
+
+
+/* image carousel styles */
+
+
+
+.d-block{
+    margin: auto;
+    width: 70%; 
+    height: 500px;
+}
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+  filter: invert(100%); }
