@@ -123,13 +123,7 @@ a:hover{
 	margin: 5px 0 0 50px;
 }
 
-/* nav line styles */
-
-.nav_line{
-  display: block;
-  border-width: .5px;
-  border-color: #2a6969;
-}
+/* paragraph font size and style */
 
 p{
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -144,6 +138,13 @@ p{
 	display: flex;
     margin: auto;
     justify-content: center;
+}
+
+.project_header_container{
+    background-color: 	#C8C8C8;
+    border-top: .5px solid black;
+    border-bottom: .5px solid black;
+    margin-bottom: 20px;
 }
 
 .grid{
@@ -230,7 +231,9 @@ p{
 
 /* image carousel styles */
 
-
+.carousel{
+    margin-bottom: 100px;
+}
 
 .d-block{
     margin: auto;
@@ -242,3 +245,21 @@ p{
 .carousel-control-next,
 .carousel-indicators {
   filter: invert(100%); }
+
+
+/* social media header link styles  */
+
+
+.social_media_links_container{
+    
+   position:absolute;
+   top:30px;
+   right:30px;
+  }
+
+.code_repo_links_container{
+    position:absolute;
+   top:30px;
+   left:30px;
+  }
+}
