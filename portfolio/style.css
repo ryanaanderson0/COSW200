@@ -280,10 +280,23 @@ p{
   }
 
 .code_repo_links_container{
-    position:absolute;
+   position:absolute;
    top:30px;
    left:30px;
   }
+
+.social-media-header{
+    margin-top: 10px; 
 }
 
+.social-media-header a{
+    padding: 5px;
+}
 
+.code-repo-header{
+    margin-top: 10px;
+}
+
+.code-repo-header a{
+    padding: 5px;
+}
