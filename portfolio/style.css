@@ -127,7 +127,7 @@ a:hover{
 
 p{
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	letter-spacing: 1px;
 }
 
@@ -210,14 +210,16 @@ p{
     margin-top: 20px;
 	text-align: center;
     width: 50%;
+    font-size: 1.3em;
 }
 
 /*footer styles*/
 .footer_container{
     background-color: #808782;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin-top: 20px;
+    max-width: 100%;
 }
 
 /* footer social media button styles */
@@ -251,23 +253,6 @@ p{
 }
 
 
-/* image carousel styles */
-
-.carousel{
-    margin-bottom: 100px;
-}
-
-.d-block{
-    margin: auto;
-    width: 70%; 
-    height: 500px;
-}
-
-.carousel-control-prev,
-.carousel-control-next,
-.carousel-indicators {
-  filter: invert(100%); }
-
 
 /* social media header link styles  */
 
@@ -278,6 +263,13 @@ p{
    top:30px;
    right:30px;
   }
+
+.social_media_links_container a{
+    width: 30px;
+    font-size: 30px;
+    padding-right: 50px;
+    text-decoration: none;
+}
 
 .code_repo_links_container{
    position:absolute;
@@ -299,4 +291,29 @@ p{
 
 .code-repo-header a{
     padding: 5px;
+}
+
+
+/* portfolio image styles */
+.row{
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.col-padding{
+    padding: 40px 20px 20px 20px;
+}
+
+.caption{
+    max-width: 475px;
+}
+
+.thumbnail-background{
+    height: 700px;
+    padding: 10px;
+    background-color: 	#F8F8F8;
+}
+
+.caption-padding{
+    padding: 20px 0 10px 0;
 }
