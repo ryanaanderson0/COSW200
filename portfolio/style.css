@@ -285,35 +285,97 @@ p{
     padding: 5px;
 }
 
-.code-repo-header{
-    margin-top: 10px;
-}
-
-.code-repo-header a{
-    padding: 5px;
-}
-
 
 /* portfolio image styles */
-.row{
-    margin-right: auto;
-    margin-left:auto;
+
+
+.col-xs-4{
+    margin: 40px;
+}
+
+.container-fluid{
+    padding: 0;
 }
 
 .col-padding{
-    padding: 40px 20px 20px 20px;
+    padding: 20px;
+    background-color:#D3D3D3;
 }
 
 .caption{
     max-width: 475px;
 }
 
-.thumbnail-background{
-    height: 700px;
-    padding: 10px;
-    background-color: 	#F8F8F8;
-}
-
 .caption-padding{
     padding: 20px 0 10px 0;
+}
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1900px) {
+   .col-xs-4{
+       margin: 40px;
+      
+   }
+}
+
+
+
+/* Landscape tablets and medium desktops */
+@media (max-width: 1899px) and (min-width: 1000px) {
+     .col-xs-4{
+       margin: 10px;
+   }
+
+  
+    
+}
+
+
+/* Portrait tablets and small desktops */
+@media screen (min-width: 768px) and (max-width: 999px) {
+      .col-xs-4{
+       margin: 20px;
+   }
+
+    .thumbnail img{
+       width: 400px;
+       height: 300px;
+   }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+     .col-xs-4{
+       margin: 20px;
+
+   }
+
+   .col-padding{
+       padding: 10px;
+   }
+   .thumbnail img{
+       justify-content: center;
+       width: 400px;
+       height: 300px;
+   }
+   .caption{
+       max-width: 400px;
+   }
+   .caption p{
+       font-size: 1em;
+   }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .col-xs-4{
+       margin: 10px;
+   }
+   .thumbnail img{
+       align-content: center;
+       width: 300px;
+       height: 200px;
+   }
 }
