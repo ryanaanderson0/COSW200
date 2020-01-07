@@ -3,12 +3,6 @@
 }
 
 
-.nav_background_texture{    
-  background-image: url("img/background_texture.png");
-  background-repeat: repeat;
-  /* background-color: #cccccc; */
-}
-
 /*heading styles*/
 
 h1{
@@ -43,24 +37,8 @@ h2{
 .header_title{
     color: #f9f9f9;
 }
-.header_logo{
-     display: flex; 
-     height: 300px; 
-}
-
-.logo_img{
-  width: 400px;
-  height: 300px;
-  margin: auto;
-}
-
 
 /* column width */
-
-.col-3{
-    margin-left: 2%;
-    margin-right: 2%;
-}
 
 
 /*link colors/decoration*/
@@ -103,25 +81,30 @@ a:hover{
 }
 
 /*main photo styles*/
+.flex{
+    display: flex;
+    text-align: center;
+}
 
-.main_photo{
-	float: left;
-	margin: 125px 0 0 200px;
-	}
+.flex-horizontal-center{
+    justify-content: center;
+    text-align: center;
+}
+
+.main-photo{
+    width: 500px;
+    height: 650px;
+    text-align: center;
+}
+
 
 /*text box styles*/
 
 .about_me_text{
 	display:inline-block;
-	width: 35%;
 	margin: 115px 0 0 50px;
 }
 
-.concepts_text{
-	display:inline-block;
-	width: 35%;
-	margin: 5px 0 0 50px;
-}
 
 /* paragraph font size and style */
 
@@ -169,18 +152,16 @@ p{
 }
 /* about me styles */
 
-.main_photo{
-    margin-left: 20%;
-}
 .about_me_container{
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .about_me_text{
     margin-top: 100px;
     margin-right: 20%;
     text-align: center;
-    width: 75%;
+    width: 100%;
 }
 .about_me_h2{   
     font-size: 2em;
@@ -198,7 +179,7 @@ p{
 /*contact styles*/
 
 .contact_container{
-    margin: 100px;
+    margin: 100px 0 100px 0
 }
 .contact_header{
 	text-align: center;
@@ -271,12 +252,6 @@ p{
     text-decoration: none;
 }
 
-.code_repo_links_container{
-   position:absolute;
-   top:30px;
-   left:30px;
-  }
-
 .social-media-header{
     margin-top: 10px; 
 }
@@ -286,11 +261,11 @@ p{
 }
 
 
-/* portfolio image styles */
+/* project styles */
 
-
-.col-xs-4{
-    margin: 40px;
+.thumbnail-img{
+    width: 500px;
+    height: 400px;
 }
 
 .container-fluid{
@@ -318,6 +293,7 @@ p{
        margin: 40px;
       
    }
+
 }
 
 
@@ -328,7 +304,11 @@ p{
        margin: 10px;
    }
 
-  
+    .about_me_text{
+	display:inline-block;
+	margin: 0;
+}
+}
     
 }
 
@@ -343,6 +323,12 @@ p{
        width: 400px;
        height: 300px;
    }
+
+   .about_me_text{
+	display:inline-block;
+	margin: 0;
+}
+
 }
 
 /* Landscape phones and portrait tablets */
@@ -355,27 +341,90 @@ p{
    .col-padding{
        padding: 10px;
    }
-   .thumbnail img{
-       justify-content: center;
-       width: 400px;
-       height: 300px;
-   }
+
    .caption{
        max-width: 400px;
    }
    .caption p{
        font-size: 1em;
    }
+
+    /* decrease header font on smaller devices */
+
+     .header_title{
+        padding-top: 50px;
+        font-size: .7em;
+    }
+
+    .header_subtitle{
+        font-size: .5em;
+    }
+
+    /* decrease img size */
+    .thumbnail-img{
+        width: 400px;
+        height: 300px;
+    }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
     .col-xs-4{
        margin: 10px;
+    
    }
-   .thumbnail img{
-       align-content: center;
-       width: 300px;
-       height: 200px;
-   }
+
+    .col-padding{
+    
+        margin: 10px;
+    }
+
+    .contact_text{
+        width: 75%;
+    }
+
+    /* decrease nav font */
+    .nav{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-item{
+        padding: 0;
+    }
+    
+    /* decrease header font size on smaller screens */
+    .header_title{
+        padding-top: 50px;
+        font-size: .7em;
+    }
+
+    .header_subtitle{
+        font-size: .5em;
+    }
+
+    /* decrease img size  */
+
+    .thumbnail-img{
+        width: 350px;
+        height: 250px;
+    }
+
+    .main_photo{
+        width: 400px;
+        height: 300px;
+    }
 }
+
+
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
