@@ -95,6 +95,7 @@ a:hover{
     width: 500px;
     height: 650px;
     text-align: center;
+    margin-left: 25%;
 }
 
 
@@ -294,27 +295,42 @@ p{
       
    }
 
+   .main-photo{
+       
+    width: 500px;
+    height: 650px;
+    text-align: center;
+    margin-left: 25%;
+}
+
+   }
+
+    h1{
+        font-size: 5em;
+    }
 }
 
 
 
 /* Landscape tablets and medium desktops */
-@media (max-width: 1899px) and (min-width: 1000px) {
+ @media (max-width: 1200px) {
      .col-xs-4{
        margin: 10px;
    }
 
-    .about_me_text{
-	display:inline-block;
-	margin: 0;
+    .about_me_text col-md col-xs-12{
+	margin-right: 0;
 }
-}
+
+    .main-photo{
+        margin-left: 25%;
+    }
     
 }
 
 
 /* Portrait tablets and small desktops */
-@media screen (min-width: 768px) and (max-width: 999px) {
+@media (max-width: 992px) {
       .col-xs-4{
        margin: 20px;
    }
@@ -324,15 +340,20 @@ p{
        height: 300px;
    }
 
-   .about_me_text{
-	display:inline-block;
-	margin: 0;
+     .about_me_text col-md col-xs-12{
+	margin-right: 0;
 }
+
+    .main-photo{
+        width: 300px;
+        height: 400px;
+        margin-left: 20%;
+    }
 
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
      .col-xs-4{
        margin: 20px;
 
@@ -348,6 +369,13 @@ p{
    .caption p{
        font-size: 1em;
    }
+
+ .main-photo{
+        width: 400px;
+        height: 500px;
+     
+    }
+
 
     /* decrease header font on smaller devices */
 
@@ -368,17 +396,14 @@ p{
 }
 
 /* Portrait phones and smaller */
-@media (max-width: 480px) {
-    .col-xs-4{
-       margin: 10px;
-    
-   }
+@media (max-width: 576px) {
+     
 
-    .col-padding{
-    
-        margin: 10px;
+
+    .col-xs-12{
+        margin-left: 10px;
+        padding: 10px;
     }
-
     .contact_text{
         width: 75%;
     }
@@ -406,13 +431,15 @@ p{
     /* decrease img size  */
 
     .thumbnail-img{
-        width: 350px;
-        height: 250px;
-    }
-
-    .main_photo{
         width: 400px;
         height: 300px;
+    }
+
+    .main-photo{
+        width: 450px;
+        height: 450px;
+        margin: 0;
+    
     }
 }
 
