@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,28 +13,22 @@
     
 </head>
 <header>
-    <div class="header_container">
-
-        <div class="header_title">	
-            <h1> Ryan Anderson </h1>
-        </div>
-
-        <div class="header_subtitle">
-            <h1 class="header_subtitle"> Web Developer </h1>
-        </div>
-
-    </div>
-
+    
     <div class="nav_container">
 
        <nav>
             <ul class="nav justify-content-center">
-            <li class="nav-item">
+           
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+           
+                <li class="nav-item">
                     <a class="nav-link" href="./projects.html">Projects</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link current_page" href="./index.html" class="current_page">About</a>
+                    <a class="nav-link current_page" href="./about.html" class="current_page">About</a>
                 </li>
 
                 <li class="nav-item">
@@ -44,6 +39,22 @@
         </nav>
     </div>
 
+    <div class="header_container">
+
+        <div class="header_title">	
+            <h1> Ryan Anderson </h1>
+        </div>
+
+        <div class="header_subtitle">
+            <h1 class="header_subtitle"> Web Developer </h1>
+        </div>
+
+        <div class="button">
+            <button>Current Work</button>
+        </div>
+    </div>
+
+<!-- 
     <div class="social_media_links_container">
 
             <a href="https://github.com/ryanaanderson0" title="Github" target="_blank" class="fa fa-github"></a>
@@ -51,44 +62,72 @@
             <a href="https://www.linkedin.com/in/ryan-anderson-24546b155/" title="LinkedIn+" target="_blank" class="fa fa-linkedin"></a>
             <a href="mailto:ryanaanderson0@gmail.com" title="Email" target="_blank" class="fa fa-envelope"></a>
         
-    </div>
+    </div> -->
    
 </header>
 
 <body>
 		
-    <div class="about_me_container">
+    <div class="about-container">
 
-        <div class="about_me_content row">
-            <div class="col-md col-xs-12">
-                    <img src="Ryan3.jpeg"  alt="photo of Ryan Anderson w/ sunglasses " class="main-photo flex-horizontal-center">
+        <div class="about-row">
+            
+            <div class="about-text col1">
+
+                <h2>Hi, I'm Ryan!</h2>
+            
+                <h3>I'm A Web Developer</h3>
+                
+                <p>I study Web Development at LBCC and graduate Spring 2020. I have been freelancing in the LA area. I have learned to build responsive, modern, and practical websites. I look forward to working with you! </p>
+
+
+            <div class="about-me-img">
+                
+                <img src="Ryan3.jpeg"  alt="photo of Ryan Anderson w/ sunglasses " class="">
 
             </div>
-
-
-        <div class="about_me_text col-md col-xs-12">
-
-                <div class="about_me_h2">
-                    <h2>Hi, I'm Ryan!</h2>
-                </div>
-                
-                <div class="about_me_h3">
-                    <h3>I'm A Web Developer</h3>
-                </div>
-
-            
-                <p class="paragraph_spacing">I study Web Development at LBCC and graduate Spring 2020. I have been freelancing in the LA area. I have learned to build responsive, modern, and practical websites. I look forward to working with you! </p>
-
-                <div class="about_me_h3">
-                    <h3>Skills</h3>
-                </div>
-
-                <p class="paragraph_spacing">HTML , CSS , JavaScript, PHP, SQL , WordPress, Bootstrap</p>
-
-
-                </div>
         </div>
-               
+
+        <div class="skills">
+            <div class="skills-header">
+                    <h1>Skills</h1>
+                    <h2>Click Icons for Certifications</h2>
+            </div>
+
+            <div class="skills-icons">
+
+                <div class="coding">
+                    <h2>Codeing</h2>
+                    <img src="img/icons/tone-icons-fountain-pen-with-cap-open.png">
+
+                    <h2>HTML5</h2>
+                    <h2>CSS3</h2>
+                    <h2>JavaScript</h2>
+
+                </div>
+
+                <div class="editing">
+                    <h2>Editing</h2>
+                    <img src="img/icons/tone-icons-scissors-open.png">
+
+                    <h3>Photoshop</h3>
+                    <h3>Illustrator</h3>
+
+                </div>
+
+                <div class="office">
+                    <h2>Office</h2>
+                    <img src="img/icons/tone-icons-tape.png">
+
+                    <h3>Office Suite</h3>
+                    <h3>Google Suite</h3>
+
+                </div>
+
+
+
+                <!-- <p class="paragraph_spacing">HTML , CSS , JavaScript, PHP, SQL , WordPress, Bootstrap</p> -->
+            </div>
         </div>
     </div>
 </body>
