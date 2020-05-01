@@ -127,20 +127,73 @@ h2.header{
     margin-left: 25%;
 }
 
-/* about me styles */
+/* about styles */
+.about-container{
+    background-color: #D3D3D3;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about-row{
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   justify-content: center;
+   background-color: white;
+}
+.about-text{
+    
+    width: 100%;
+    height: 350px;
+    margin-top: 20%;
+}
+.about-img{
+    width: 50%;
+    height: 50%;
+}
+
+/* skills styles */
+
+#skills-boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 
+/* work styles */
+
+#work-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: gray;
+}
+
+img.work-img-resize{
+    width: 500px;
+    height: 400px;
+}
+
+.right-align{
+    align-items: right:
+}
 
 
 /*contact styles*/
 
-.contact_container{
-    margin: 100px 0 100px 0
+.contact-container{
+   
 }
-.contact_header{
+.contact-box{
+    width: 60%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
 	text-align: center;
+    background-color: #0a3663;
 }
 .contact_text{
+    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
