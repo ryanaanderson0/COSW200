@@ -1,5 +1,6 @@
-.container{
-	margin-top: 5%;
+*{
+	margin: 0;
+    padding: 0;
 }
 
 
@@ -9,16 +10,9 @@ h1{
 	font-family: 'Unica One', cursive;
 	text-transform: uppercase;
 	letter-spacing: 10px;
-    font-weight: bold;
     font-size: 5em;
     text-align: center;
-    padding-top: 20px;
-}
-
-h1.header_subtitle {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 2em;
-    color: #f9f9f9;
+    font-weight: 20;
 }
 
 h2{
@@ -27,19 +21,27 @@ h2{
 	font-size: 2em;
 }
 
-/* header logo img styles */
-
-.header_container{
-    background-color: 	#2F4F4F;
-    padding-bottom: 4%;
+p{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.3em;
+	letter-spacing: 1px;
 }
 
-.header_title{
-    color: #f9f9f9;
+
+/*navigation orientation/styles */
+
+.nav-item{
+	font-family: 'Unica One', cursive;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding-right: 50px;
 }
 
-/* column width */
-
+.nav_container {
+    max-height: auto;
+    background-image: 	#2F4F4F;
+    padding-bottom: 1%;
+}
 
 /*link colors/decoration*/
 
@@ -65,25 +67,52 @@ a:hover{
 	color: #7ABFD6 ;
 }
 
-/*navigation orientation/styles */
 
-.nav-item{
-	font-family: 'Unica One', cursive;
-	font-size: 1.7em;
+/* header styles */
+
+.header_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4%;  
+}
+
+.header-background{
+    background-image: url("/portfolio/img/gradient.jpg");
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+}
+h1.header{
+    font-family: 'Unica One', cursive;
 	text-transform: uppercase;
-	padding-right: 50px;
+	letter-spacing: 10px;
+    font-size: 5em;
+    text-align: center;
+    font-weight: 20;
+    color: #C8C8C8;
 }
 
-.nav_container {
-    max-height: auto;
-    background-color: 	#2F4F4F;
-    padding-bottom: 1%;
+h2.header{
+    color: yellow;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2em;
 }
+
+#header-button{
+    width: 150px;
+}
+
 
 /*main photo styles*/
 .flex{
     display: flex;
-    text-align: center;
+}
+
+.grid{
+    display: grid;
 }
 
 .flex-horizontal-center{
@@ -98,84 +127,10 @@ a:hover{
     margin-left: 25%;
 }
 
-
-/*text box styles*/
-
-.about_me_text{
-	display:inline-block;
-	margin: 115px 0 0 50px;
-}
-
-
-/* paragraph font size and style */
-
-p{
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1.3em;
-	letter-spacing: 1px;
-}
-
-
-/*index styles*/
-
-.project_header{
-	display: flex;
-    margin: auto;
-    justify-content: center;
-}
-
-.project_header_container{
-    background-color: 	#C8C8C8;
-    border-top: .5px solid black;
-    border-bottom: .5px solid black;
-    margin-bottom: 20px;
-}
-
-.grid{
-	margin-left: 100px;
-}
-
-.portfolio_item{
-	margin:50px 40px -10px 60px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: gray;
-}
-
-.project_title{
-	width: 302px;
-	margin-left: 60px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	text-align:center;
-
-}
 /* about me styles */
 
-.about_me_container{
-    margin-bottom: 100px;
-    margin-top: 100px;
-}
 
-.about_me_text{
-    margin-top: 100px;
-    margin-right: 20%;
-    text-align: center;
-    width: 100%;
-}
-.about_me_h2{   
-    font-size: 2em;
-} 
 
-.about_me_h3{
-    margin-top: 20px;
-}
-
-.paragraph_spacing{
-    margin-top: 20px;
-    font-size: 1.5em;
-}
 
 /*contact styles*/
 
