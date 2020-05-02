@@ -38,9 +38,9 @@ p{
 	padding-right: 50px;
 }
 
-.nav_container {
-    max-height: auto;
-    background-image: 	#2F4F4F;
+.nav-container {
+    max-height: 75%;
+    background: #2F4F4F;
     padding-bottom: 1%;
 }
 
@@ -80,9 +80,8 @@ a:hover{
 }
 
 .header-background{
-    background-image: url("/portfolio/img/gradient.jpg");
-    background-repeat: no-repeat;
-    height: 600px;
+    background: #2F4F4F;
+    height: 900px;
     width: 100%;
     background-size: cover;
 }
@@ -94,67 +93,80 @@ h1.header{
     text-align: center;
     font-weight: 20;
     color: #C8C8C8;
+    text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
+   
 }
 
 h2.header{
     color: #C8C8C8;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     text-transform: capitalize;
+    margin-top: 50px;   
 }
 
 #header-button{
-    width: 150px;
-    background-color: none;
+
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: solid #D6D9C9 3px;
+    background-color: transparent;
+    margin-top: 150px;
+    font-family: 'Unica One', cursive;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #D6D9C9;
 }
 
-
-/*main photo styles*/
-.flex{
-    display: flex;
+#header-button:hover {
+    box-shadow: 0 0 40px #222;
+    color: #7ABFD6;
+    border: solid #7ABFD6 3px;
 }
-
-.grid{
-    display: grid;
-}
-
-.flex-horizontal-center{
-    justify-content: center;
-    text-align: center;
-}
-
-.main-photo{
-    width: 500px;
-    height: 650px;
-    text-align: center;
-    margin-left: 25%;
-}
-
 /* about styles */
-.about-container{
-    background-color: #D3D3D3;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .about-row{
-   display: flex;
-   flex-direction: row;
-   align-content: center;
+   display: grid;
+   grid-template-columns: 2fr 2fr;
+   align-items: center;
    justify-content: center;
-   background-color: white;
+   margin: 10%;
 }
 .about-text{
-    
-    width: 100%;
-    height: 350px;
-    margin-top: 20%;
+    padding: 40px;
+    width: 75%;
+    background: #D6D9C9;
+    border-radius: 9%;
+    justify-self: flex-end;
 }
 .about-img{
     width: 50%;
     height: 50%;
+    border-radius: 50%;
+    border: solid #D6D9C9 80px;
 }
 
+.resume{
+    text-align: center;
+}
 /* skills styles */
 
 #skills-boxes{
@@ -177,31 +189,35 @@ h2.header{
     width: 75%;
 }
 
-.skills-header{
+.skills{
     padding-top: 4%;
+    background: #C0C0C0;
 }
 /* work styles */
-
+.work-container{
+    background: #2F4F4F;
+    padding-bottom: 8%;
+}
 #work-gallery{
     margin-right: auto;
     margin-left: auto;
     display: grid;
-    grid-template-columns: 28% 28%;
-    grid-template-rows: auto auto 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 2fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    align-items:center;
+    align-items: center;
     justify-content:center;
+    width: 60%;
+    border: solid #D6D9C9 50px;
+    background: #D6D9C9;
 }
-
-
+.work-text{
+    grid-column: span 2;
+}
 img.work-img-resize{
     width: 500px;
     height: 400px;
-}
-
-.right-align{
-    align-items: right:
 }
 
 
@@ -221,7 +237,7 @@ img.work-img-resize{
     margin-right: auto;
     margin-left: auto;
 	text-align: center;
-    background-color: #0a3663;
+    background-color: #2F4F4F;
     border-radius: 8%;
     box-shadow: 0 0 30px #0a0a0a;
 }
