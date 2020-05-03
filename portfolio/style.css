@@ -54,14 +54,17 @@ a , li{
 
 a:active{
 	color: #7ABFD6;
+    text-decoration: none;
 }
 
 a:link{
 	color: #808782;
+    text-decoration: none;
 }
 
 a:hover{
 	color: #7ABFD6;
+    text-decoration: none;
 }
 
 .current_page{
@@ -134,12 +137,15 @@ h2.header{
     font-size: 1.5em;
     text-transform: uppercase;
     color: #D6D9C9;
+
 }
+
 
 #header-button:hover {
     box-shadow: 0 0 40px #222;
     color: #7ABFD6;
     border: solid #7ABFD6 3px;
+    text-decoration: none;
 }
 /* about styles */
 
@@ -196,6 +202,7 @@ h2.header{
 /* work styles */
 .work-container{
     background: #2F4F4F;
+    /* background: #355357; */
     padding-bottom: 8%;
 }
 #work-gallery{
@@ -219,6 +226,7 @@ img.work-img-resize{
     width: 500px;
     height: 400px;
 }
+
 
 
 /*contact styles*/
