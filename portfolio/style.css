@@ -122,22 +122,32 @@ h2.header{
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     text-transform: capitalize;
-    margin-top: 50px;   
+    margin-top: 30px;   
 }
 
-#header-button{
+.button-style{
 
     width: 200px;
     height: 50px;
     border-radius: 15px;
     border: solid #D6D9C9 3px;
     background-color: transparent;
-    margin-top: 150px;
     font-family: 'Unica One', cursive;
     font-size: 1.5em;
     text-transform: uppercase;
     color: #D6D9C9;
+}
 
+.button-position{
+    position: absolute;
+    bottom: 0;
+}
+
+hr.white-line{
+  border: .5px solid;
+  color: white;
+  opacity: .2;
+  width: 20%;
 }
 
 
@@ -211,20 +221,28 @@ h2.header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 2fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     align-items: center;
     justify-content:center;
-    width: 60%;
-    border: solid #D6D9C9 50px;
-    background: #D6D9C9;
+    max-width: 60%;
+    background-color: #D6D9C9;
 }
 .work-text{
     grid-column: span 2;
+    padding: 4%;
+}
+.work-text h2{
+    text-align: center;
+    padding-bottom: 2%;
 }
 img.work-img-resize{
     width: 500px;
     height: 400px;
+   
+}
+.work-img{
+     border: solid #D6D9C9 25px;
 }
 
 
@@ -269,7 +287,8 @@ img.work-img-resize{
     max-width: 100%;
 }
 
-/* footer social media button styles */
+/*social media button styles */
+
 
 .social-media-footer{
     margin: auto;
@@ -299,59 +318,13 @@ img.work-img-resize{
     color: #7ABFD6;
 }
 
-
-
-/* social media header link styles  */
-
-
-.social_media_links_container{
-    
-   position:absolute;
-   top:30px;
-   right:30px;
-  }
-
 .social_media_links_container a{
-    width: 30px;
-    font-size: 30px;
-    padding-right: 50px;
+    padding: 20px;
+    font-size: 25px;
     text-decoration: none;
 }
 
-.social-media-header{
-    margin-top: 10px; 
-}
-
-.social-media-header a{
-    padding: 5px;
-}
-
-
-/* project styles */
-
-.thumbnail-img{
-    width: 500px;
-    height: 400px;
-}
-
-.container-fluid{
-    padding: 0;
-}
-
-.col-padding{
-    padding: 20px;
-    background-color:#D3D3D3;
-}
-
-.caption{
-    max-width: 475px;
-}
-
-.caption-padding{
-    padding: 20px 0 10px 0;
-}
-
-
+/* RESPONSIVE STYLES */
 
 /* Large desktops and laptops */
 @media (min-width: 1900px) {
