@@ -59,7 +59,7 @@
         </div>
 
         <div class="header_contents">
-            <button class="button-style button-position"><a href="#work-container" id="#header-button">Current Work</a></button>
+            <button class="button-style button-position"><a href="#work-button-link">Current Work</a></button>
         </div>
 
 
@@ -72,14 +72,14 @@
 <body>
 		
     <div class="about-container">
+        <h1 class="about-header-position">About Me</h1>
 
         <div class="about-row">
-            
             <div class="about-text">
 
                 <h2>Hi, I'm Ryan!</h2>
             
-                <h3>I'm A Web Developer</h3>
+                <h3>Thanks for stopping by</h3>
                 
                 <p>I study Web Development at LBCC and graduate Spring 2020. I have been freelancing in the LA area. I have learned to build responsive, modern, and practical websites. I look forward to working with you! </p>
             </div>
@@ -90,47 +90,49 @@
         </div>
 
         <div class="resume">
-        <h2>For more information about my life</h2>
-        <h3>-Download My Resume-</h3>
-        <div class="button">
-            <button id="resume-button" class="button-style">Download Resume</button>
-         </div>
+            <h2>For more information about my life</h2>
+
+            <div>
+                <button id="resume-button" class="button-style" ><a href="/portfolio/RESUME_RyanAnderson_WebDev1.23.20.pdf" target="_blank">Resume</a></button>
+            </div>
         </div>
 
        
-            <div class="skills">
-                    <h1>Skills</h1>
+        <div class="skills">
+                <h1>Skills</h1>
             
 
-            <div id="skills-boxes">
+        <div id="skills-boxes">
 
-                <div class="skills-content">
-                    <h2>Coding</h2>
-                    <img class="skills-icon" src="img/icons/tone-icons-fountain-pen-with-cap-open.png">
+            <div class="skills-content">
+                <h2>Front-End</h2>
+                <img class="skills-icon" src="img/icons/tone-icons-fountain-pen-with-cap-open.png">
 
-                    <h2>HTML5</h2>
-                    <h2>CSS3</h2>
-                    <h2>JavaScript</h2>
+                <h3>HTML5</h3>
+                <h3>CSS3</h3>
+                <h3>JavaScript</h3>
+                <h3>BootStrap</h3>
+                <h3></h3>
 
-                </div>
+            </div>
 
-                <div class="skills-content">
-                    <h2>Editing</h2>
-                    <img class="skills-icon" src="img/icons/tone-icons-scissors-open.png">
+            <div class="skills-content">
+                <h2>Back-End</h2>
+                <img class="skills-icon" src="img/icons/tone-icons-scissors-open.png">
 
-                    <h3>Photoshop</h3>
-                    <h3>Illustrator</h3>
+                <h3>SQL/ MySQL</h3>
+                <h3>PHP</h3>
 
-                </div>
+            </div>
 
-                <div class="skills-content">
-                    <h2>Office</h2>
-                    <img class="skills-icon" src="img/icons/tone-icons-glasses.png">
+            <div class="skills-content">
+                <h2>Office</h2>
+                <img class="skills-icon" src="img/icons/tone-icons-glasses.png">
 
-                    <h3>Office Suite</h3>
-                    <h3>Google Suite</h3>
+                <h3>Office Suite</h3>
+                <h3>Adobe Creative Cloud</h3>
 
-                </div>
+            </div>
 
             </div>
 
@@ -138,14 +140,27 @@
             </div>
     </div>
 
-    <div class="work-container" id="work-container">
+    <div class="work-container" >
     
-        <h1>Current Work</h1>
+        <h1 class="work-heading-padding" id="work-button-link">Current Work</h1>
 
         <div id="work-gallery">
             <div class="work-img">
-                <img class="work-img-resize" src="img/current_projects/upstage.PNG">
+                <a class="img__wrap">
+                <img class="work-img-resize " src="img/current_projects/upstage.PNG">
+            
+                <div class="work-text overlay">
+                    <div class="fig">
+                    <h2>UpStage Directory</h2>
+
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    
+                </div>
+            </a>
             </div>
+
+
 
             <div class="work-img">
                 <img class="work-img-resize" src="img/current_projects/ryeryebreadco.PNG">
@@ -159,12 +174,17 @@
                 <img class="work-img-resize" src="img/php_sql/ts_homepage.PNG">
             </div>
         
-            <div class="work-text">
-                <h2>Big Smile Co.</h2>
+            <figcaption class="work-text">
+                <h2>UpStage Directory</h2>
 
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         
-            </div>
+            </figcaption>
+        </div>
+
+        <div class="portfolio-button-position">
+            <h2>Check Out More Of My Work</h2>
+            <button class="button-style "><a href="/portfolio/projects.html" target="_blank" id="portfolio-button">View All</a></button>
         </div>
        
     </div>
@@ -195,7 +215,7 @@
 
     <div class="footer_container">
 
-        <h4>Site Created By Ryan Anderson<h4>
+        <h1 class="footer-header">Site Created By Ryan Anderson</h1>
 
         <div class="social-media-footer">
            <a href="https://github.com/ryanaanderson0" title="Github" target="_blank" class="fa fa-github"></a>
