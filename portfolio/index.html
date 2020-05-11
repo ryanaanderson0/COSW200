@@ -106,32 +106,36 @@
 
             <div class="skills-content">
                 <h2>Front-End</h2>
-                <img class="skills-icon" src="img/icons/tone-icons-fountain-pen-with-cap-open.png">
+                <img class="skills-icon" src="img/icons/coding_computer.png">
 
-                <h3>HTML5</h3>
-                <h3>CSS3</h3>
-                <h3>JavaScript</h3>
-                <h3>BootStrap</h3>
-                <h3></h3>
-
+                <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>BootStrap</li>
+                <li>WordPress</li>
+                </ul>
             </div>
 
             <div class="skills-content">
                 <h2>Back-End</h2>
-                <img class="skills-icon" src="img/icons/tone-icons-scissors-open.png">
-
-                <h3>SQL/ MySQL</h3>
-                <h3>PHP</h3>
+                <img class="skills-icon" src="img/icons/coding_gears.png">
+                
+                <ul>
+                <li>SQL/ MySQL</li>
+                <li>PHP</li>
+                </ul>
 
             </div>
 
             <div class="skills-content">
-                <h2>Office</h2>
-                <img class="skills-icon" src="img/icons/tone-icons-glasses.png">
-
-                <h3>Office Suite</h3>
-                <h3>Adobe Creative Cloud</h3>
-
+                <h2>Graphic Design & Office</h2>
+                <img class="skills-icon" src="img/icons/coding_design.png">
+                
+                <ul>
+                <li>Office Suite</li>
+                <li>Adobe Creative Cloud</li>
+                </ul>
             </div>
 
             </div>
@@ -145,41 +149,56 @@
         <h1 class="work-heading-padding" id="work-button-link">Current Work</h1>
 
         <div id="work-gallery">
-            <div class="work-img">
-                <a class="img__wrap">
-                <img class="work-img-resize " src="img/current_projects/upstage.PNG">
-            
-                <div class="work-text overlay">
-                    <div class="fig">
-                    <h2>UpStage Directory</h2>
 
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="overlay-container">
+                <img src="img/current_projects/upstage.PNG" alt="Avatar" class="work-img-resize overlay-img">
+                <div class="overlay">
+                    <div class="fig-text"> 
+                        <h1>UpStage Directory</h1> 
+
+                        <p>I used WordPress to create an app landing page/ blog. I used custom css and WordPress plugins to creat a platform fit for the app. </p>
+                        <button class="button-style">Link</button>
                     </div>
-                    
                 </div>
-            </a>
             </div>
 
+            <div class="overlay-container">
+                <img src="img/current_projects/ryeryebreadco.PNG" alt="Avatar" class="work-img-resize overlay-img">
+                <div class="overlay">
+                    <div class="fig-text">
+                        <h1>Rye Rye Bread Co.</h1>
 
-
-            <div class="work-img">
-                <img class="work-img-resize" src="img/current_projects/ryeryebreadco.PNG">
+                        <p>I used WordPress to create a website for my own commercial baking company, Rye Rye Bread Co. </p>
+                        <button class="button-style">Link</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="work-img">
-                <img class="work-img-resize" src="img/php_sql/hw3_tuition_calculator.PNG">
+            <div class="overlay-container">
+                <img src="img/php_sql/hw3_tuition_calculator.PNG" alt="Avatar" class="work-img-resize overlay-img">
+                <div class="overlay">
+                    <div class="fig-text">
+                        <h1>Tuition Calculator</h1>
+
+                        <p>To create this mock LBCC tuition calcultaor, I used PHP to retrieve the information from submitting the form.  I then used that data and applied operators to calculate the tuition total.</p>
+                        <button class="button-style">Link</button>
+
+                    </div>
+                </div>
             </div>
 
-            <div class="work-img">
-                <img class="work-img-resize" src="img/php_sql/ts_homepage.PNG">
+            <div class="overlay-container">
+                <img src="img/php_sql/ts_homepage.PNG" alt="Avatar" class="work-img-resize overlay-img">
+                <div class="overlay">
+                    <div class="fig-text">
+                        <h1>Treat Street</h1>
+                    
+                        <p></p>
+                        <button class="button-style">Link</button>
+                    </div>
+                </div>
             </div>
-        
-            <figcaption class="work-text">
-                <h2>UpStage Directory</h2>
 
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-            </figcaption>
         </div>
 
         <div class="portfolio-button-position">
@@ -195,15 +214,18 @@
     
         <h1> Contact Me </h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p>I'd love to hear from you! To fill out the form below; include your name, email, and some sweet nothings. Smash that send button and I'll get back to you ASAP.  </p>
 
         <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-            Name:<br>
+            <label for="name">Name:</label><br>
             <input type="text" name="name"><br>
-            E-mail:<br>
+
+            <label for="email">E-mail:</label><br>
             <input type="text" name="mail"><br>
-            Comment:<br>
-            <input type="text" name="comment" size="50"><br><br>
+
+            <label for="comment">Comment:</label><br>
+            <textarea type="text" name="comment" size="550" class="comment-area"></textarea><br>
+
             <input type="submit" value="Send" class="button-style">
             <input type="reset" value="Reset" class="button-style">
         </form>
