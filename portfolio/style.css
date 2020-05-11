@@ -22,6 +22,9 @@ h2{
 	font-size: 2em;
 }
 
+h3{
+    font-size: 1.0em;
+}
 p{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.3em;
@@ -160,6 +163,7 @@ hr.white-line{
     border: solid #7ABFD6 3px;
     text-decoration: none;
 }
+
 /* about styles */
 .about-container{
     background: #D6D9C9;
@@ -188,6 +192,10 @@ hr.white-line{
     height: 50%;
     border-radius: 50%;
     box-shadow: 0 0 20px #696969;
+}
+
+.about-text h2, h3{
+    text-align: center;
 }
 
 .resume{
@@ -229,6 +237,10 @@ hr.white-line{
     text-align: center;
     box-shadow: 0 0 20px #696969;
 }
+
+.skills-content ul, li{
+    text-align: left;
+}
 .skills-icon{
     width: 30%;
     margin-top: 30px;
@@ -238,6 +250,12 @@ hr.white-line{
 .skills{
     padding-top: 4%;
     background: #C0C0C0;
+}
+.skills-content a{
+    color: #0a0a0a;
+}
+.skills-content a:hover{
+    color: #7ABFD6;
 }
 /* work styles */
 .work-container{
@@ -352,7 +370,7 @@ img.work-img-resize{
     color: #0a0a0a;
 }
 .contact-box p{
-
+  color: #7ABFD6;
 }
 
 .contact_text{
@@ -381,6 +399,9 @@ input, textarea{
 textarea.comment-area{
     height: 150px;
     resize: none;
+}
+.form-button-spacing{
+    margin-top: 50px;
 }
 
 /*footer styles*/
