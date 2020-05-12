@@ -403,6 +403,18 @@ textarea.comment-area{
 .form-button-spacing{
     margin-top: 50px;
 }
+input:focus , textarea:focus{
+    background: #7ABFD6;
+}
+
+/* projects page styles */
+
+.portfolio-header-background{
+    background: #2F4F4F;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
 
 /*footer styles*/
 .footer_container{
