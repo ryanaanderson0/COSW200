@@ -257,6 +257,8 @@ hr.white-line{
     padding-bottom: 4%;
     background: #C0C0C0;
 }
+
+
 #skills-row{
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -265,20 +267,41 @@ hr.white-line{
     text-align: center;
     padding-top: 4%;
 }
-.skills-column{
-    padding-top: 6%;
+.skills-content-container{
     margin: 15px;
     background-color: white;
     height: 300px;
+    transition: transform .5s;
+    transform-style: preserve-3d; 
+}
+
+.skills-content-container:hover{
+    transform: rotateY(180deg);
+    box-shadow: 0 0 20px #696969;
+}
+.skills-content-front, .skills-content-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.skills-content-front{
+    background-color: white;
+    align-self: center;
+    
+}
+.skills-content-back{
+    position: relative;
+    background-color: #2F4F4F;
+    transform: rotateY(180deg);
+    color: white;
 }
 .skills-icon{
     width: 100px;
     height: 100px;
     margin-top: 30px;
 }
-.skills-column:hover{
-    box-shadow: 0 0 20px #696969;
-}
+
 /* work styles */
 .work-container{
     background: #D6D9C9;
