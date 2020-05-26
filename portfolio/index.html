@@ -16,7 +16,7 @@
     
     <div class="nav-container">
 
-       <nav>
+       <nav id="navbar" class="sticky">
             <ul class="nav justify-content-center">
            
                 <li class="nav-item">
@@ -52,7 +52,7 @@
         <hr class="white-line">
     
         <div class="social_media_links_container">
-                <a href="https://github.com/ryanaanderson0" title="Github" target="_blank" class="fa fa-github"></a>
+                <a href="https://github.com/ryanaanderson0" title="Github" target="_blank" class="fa fa-github" id="profile-link"></a>
                 <a href="https://codepen.io/ryanaanderson0" title="Codepen" target="_blank" class="fa fa-codepen"></a>
                 <a href="https://www.linkedin.com/in/ryan-anderson-24546b155/" title="LinkedIn+" target="_blank" class="fa fa-linkedin"></a>
                 <a href="mailto:ryanaanderson0@gmail.com" title="Email" target="_blank" class="fa fa-envelope"></a>    
@@ -71,13 +71,13 @@
 
 <body>
 		
-    <div class="about-container" id="about-link">
-        <h1 class="about-header-position">About Me</h1>
+    <div class="about-container" >
+        <h1 class="about-header-position" id="about-link">About Me</h1>
 
-        <div class="about-row">
+        <div class="about-row" id="welcome-section">
             <div class="about-text">
 
-                <h2>Hi, I'm Ryan!</h2>
+                <h1>Hi, I'm Ryan!</h1>
             
                 <h3>Thanks for stopping by</h3>
                 
@@ -140,7 +140,7 @@
                 <div class="skills-content-container">
                     <div class="skills-content-front">
                         <h2>JavaScript</h2>
-                        <img src="img/icons/js_logo.png" class="skills-icon">
+                        <img src="img/icons/js_logo.jpg" class="skills-icon">
                     </div>
 
                     <div class="skills-content-back"> 
@@ -149,6 +149,7 @@
                         <h2>Projects</h2>
                         <a href="https://codepen.io/ryanaanderson0/pen/NWWjaWK">Character Generator</a>
                         <a href="https://codepen.io/ryanaanderson0/pen/YzKeLmL">The Office Trivia Game</a>
+                        
                     </div>
                 </div>
 
@@ -162,7 +163,7 @@
                         <h2>Certifications</h2>
                         <a href="">Solo Learn</a>
                         <h2>Projects</h2>
-                        <a href="http://upstage.directory/">UpStage Directory</a><br>
+                        <a href="http://upstage.directory/">UpStage Directory</a>
                         <a href="https://bigsmile.co">Big Smile Co.</a>
                     </div>
                 </div>
@@ -226,16 +227,15 @@
        
     </div>
 
-    <div class="work-container" >
+    <div class="work-container" id="projects">
     
         <h1 class="work-heading-padding" id="work-button-link">Current Work</h1>
-
         <div id="work-gallery">
 
             <div class="overlay-container">
                 <img src="img/current_projects/upstage.PNG" alt="Avatar" class="work-img-resize overlay-img">
                 <div class="overlay">
-                    <div class="fig-text"> 
+                    <div class="fig-text project-tile"> 
                         <h1>UpStage Directory</h1> 
 
                         <p>I used WordPress to create an app landing page/ blog. I used custom css and WordPress plugins to creat a platform fit for the app. </p>
@@ -247,7 +247,7 @@
             <div class="overlay-container">
                 <img src="img/current_projects/ryeryebreadco.PNG" alt="Avatar" class="work-img-resize overlay-img">
                 <div class="overlay">
-                    <div class="fig-text">
+                    <div class="fig-text project-tile">
                         <h1>Rye Rye Bread Co.</h1>
 
                         <p>I used WordPress to create a website for my own commercial baking company, Rye Rye Bread Co. </p>
@@ -259,7 +259,7 @@
             <div class="overlay-container">
                 <img src="img/php_sql/hw3_tuition_calculator.PNG" alt="Avatar" class="work-img-resize overlay-img">
                 <div class="overlay">
-                    <div class="fig-text">
+                    <div class="fig-text project-tile">
                         <h1>Tuition Calculator</h1>
 
                         <p>To create this mock LBCC tuition calcultaor, I used PHP to retrieve the information from submitting the form.  I then used that data and applied operators to calculate the tuition total.</p>
@@ -272,7 +272,7 @@
             <div class="overlay-container">
                 <img src="img/php_sql/ts_homepage.PNG" alt="Avatar" class="work-img-resize overlay-img">
                 <div class="overlay">
-                    <div class="fig-text">
+                    <div class="fig-text project-tile">
                         <h1>Treat Street</h1>
                     
                         <p>This is a class project in my PHP course. Our team created a backend CRUD console for our E-Commerce product listings.  </p>
@@ -314,6 +314,22 @@
     </div>
 </div>
 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+//sticky navbar on scroll JS
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
 </body>
 <footer>
 

@@ -46,7 +46,12 @@ p{
     background: #2F4F4F;
     padding-bottom: 1%;
 }
-
+/* sticky navbar style */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 /*link colors/decoration*/
 
 a , nav-item.li{
@@ -168,12 +173,15 @@ hr.white-line{
 .about-container{
     background: #D6D9C9;
 }
+#welcome-section{
+    height: 100vh;
+}
 .about-header-position{
     padding-top: 3%;
 }
 .about-row{
    display: grid;
-   grid-template-columns: 2fr 2fr;
+   grid-template-columns: 1fr 1fr;
    align-items: center;
    justify-content: center;
    margin: 5%;
@@ -219,38 +227,8 @@ hr.white-line{
     border: solid #7ABFD6 3px;
     text-decoration: none;
 }
+
 /* skills styles */
-
-/* #skills-boxes{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 4%;
-    padding-bottom: 4%;
-}
-.skills-content{
-    flex-basis: 30%;
-    margin-bottom: 2%;
-    padding: 4%;
-    min-width: 250px;
-    border-radius: 10%;
-    background-color: #ffffff;
-    text-align: center;
-    box-shadow: 0 0 20px #696969;
-}
-
-.skills-content ul, li{
-    text-align: left;
-}
-
-
-
-.skills-content a{
-    color: #0a0a0a;
-}
-.skills-content a:hover{
-    color: #7ABFD6;
-} */
-/* new-skills section styles */
 
 .skills-container{
     padding-top: 4%;
@@ -273,6 +251,7 @@ hr.white-line{
     height: 300px;
     transition: transform .5s;
     transform-style: preserve-3d; 
+    
 }
 
 .skills-content-container:hover{
@@ -284,6 +263,11 @@ hr.white-line{
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .skills-content-front{
     background-color: white;
@@ -295,6 +279,13 @@ hr.white-line{
     background-color: #2F4F4F;
     transform: rotateY(180deg);
     color: white;
+}
+.skills-content-back h2{
+    text-decoration: underline;
+}
+.skills-content-back a{
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 .skills-icon{
     width: 100px;
