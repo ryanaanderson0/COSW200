@@ -296,7 +296,6 @@ hr.white-line{
 /* work styles */
 .work-container{
     background: #D6D9C9;
-    /* background: #355357; */
     padding-bottom: 8%;
 }
 .work-heading-padding{
@@ -546,9 +545,47 @@ input:focus , textarea:focus{
 
 /* Portrait tablets and small desktops */
 @media (max-width: 992px) {
-      .col-xs-4{
-       margin: 20px;
-   }
+/* skills row three columns     */
+#skills-row{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 33% 33% 33%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.about-row{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto auto;
+   align-items: center;
+   justify-content: center;
+   margin: 5%;
+}
+#main-img{
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+    align-self: center;
+}
+
+
+#welcome-section{
+    height: auto;
+}
+
+
+/* work gallery 1 column */
+#work-gallery{
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    max-width: 60%;
+}
+
 
     .thumbnail img{
        width: 400px;
@@ -613,12 +650,16 @@ input:focus , textarea:focus{
 /* Portrait phones and smaller */
 @media (max-width: 576px) {
      
+#skills-row{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 4%;
+}
 
-
-    .col-xs-12{
-        margin-left: 10px;
-        padding: 10px;
-    }
+    
     .contact_text{
         width: 75%;
     }
