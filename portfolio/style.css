@@ -39,6 +39,7 @@ p{
 	font-size: 1.5em;
 	text-transform: uppercase;
 	padding-right: 50px;
+    text-shadow: 2px 2px #2F4F4F;
 }
 
 .nav-container {
@@ -290,8 +291,8 @@ hr.white-line{
     text-transform: uppercase;
 }
 .skills-icon{
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    height: 30%;
     margin-top: 30px;
 }
 
@@ -608,14 +609,13 @@ input:focus , textarea:focus{
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 768px) {
-     .col-xs-4{
-       margin: 20px;
-
-   }
-
-   .col-padding{
-       padding: 10px;
-   }
+   
+    .nav-item{
+	font-family: 'Unica One', cursive;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding-right: 30px;
+}
 
    .caption{
        max-width: 400px;
@@ -624,11 +624,25 @@ input:focus , textarea:focus{
        font-size: 1em;
    }
 
- .main-photo{
-        width: 400px;
-        height: 500px;
-     
+    #img-size {
+    width: 300px;
+    height: 300px;
+    
     }
+
+    #about-row{
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 100vw;
+    align-items: center;
+    }
+
+    .about-text{
+        margin-top: 2%;
+    }
+
+    
+
 
 
     /* decrease header font on smaller devices */
@@ -661,44 +675,13 @@ input:focus , textarea:focus{
     padding-top: 4%;
 }
 
+.nav-item{
+	font-family: 'Unica One', cursive;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding-right: 30px;
+}
     
-    .contact_text{
-        width: 75%;
-    }
-
-    /* decrease nav font */
-    .nav{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-item{
-        padding: 0;
-    }
-    
-    /* decrease header font size on smaller screens */
-    .header_title{
-        padding-top: 50px;
-        font-size: .7em;
-    }
-
-    .header_subtitle{
-        font-size: .5em;
-    }
-
-    /* decrease img size  */
-
-    .thumbnail-img{
-        width: 400px;
-        height: 300px;
-    }
-
-    .main-photo{
-        width: 450px;
-        height: 450px;
-        margin: 0;
-    
-    }
 }
 
 
