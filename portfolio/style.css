@@ -47,6 +47,7 @@ p{
     padding-bottom: 1%;
 }
 /* sticky navbar style */
+
 .sticky {
   position: fixed;
   top: 0;
@@ -170,44 +171,45 @@ hr.white-line{
 }
 
 /* about styles */
-.about-container{
-    background: #D6D9C9;
-}
-#welcome-section{
-    height: 100vh;
-}
+
 .about-header-position{
     padding-top: 3%;
 }
-.about-row{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   align-items: center;
-   justify-content: center;
-   margin: 5%;
+
+#about-row{
+  margin-top: 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
+
+
 .about-text{
-    padding: 40px;
-    width: 60%;
-    background: #ffffff;
-    border-radius: 10%;
-    justify-self: flex-end;
-    box-shadow: 0 0 20px #696969;
-    margin-right: 5%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-paragraph{
+    padding-top: 10px;
+    font-size: 1.5em;
 }
 .about-img{
-    width: 65%;
-    height: 50%;
+    display: flex; 
+    justify-content: center;
+}
+#img-size {
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     box-shadow: 0 0 20px #696969;
 }
-
 .about-text h2, h3{
     text-align: center;
 }
 
 .resume{
     text-align: center;
+    margin-top: 6%;
     padding-bottom: 5%;
 }
 
